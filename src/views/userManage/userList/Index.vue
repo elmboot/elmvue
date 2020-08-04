@@ -35,6 +35,8 @@ export default {
   created() {
     users()
       .then(r => {
+        console.log(r);
+        
         this.tableData = r;
       })
       .catch(e => {
